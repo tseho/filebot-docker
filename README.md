@@ -1,11 +1,5 @@
 # filebot-docker
 
-## Build
-
-```
-docker build . -t tseho/filebot-docker:latest
-```
-
 ## Run
 
 ```
