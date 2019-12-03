@@ -1,4 +1,4 @@
-FROM openjdk:14
+FROM openjdk:8
 
 MAINTAINER Quentin Favrie <quentin.favrie@gmail.com>
 
