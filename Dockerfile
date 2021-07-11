@@ -6,6 +6,8 @@ ARG FILEBOT_ARCHIVE=FileBot_4.7.9-portable.tar.xz
 
 ADD ./${FILEBOT_ARCHIVE} /opt/filebot
 
+RUN apt-get update && apt-get install -y libmediainfo-dev
+
 WORKDIR /opt/filebot
 
-ENTRYPOINT ["java", "-jar", "/opt/filebot/FileBot.jar"]
+ENTRYPOINT ["/opt/filebot/filebot.sh"]
